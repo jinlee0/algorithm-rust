@@ -2,7 +2,7 @@ use std::io::stdin;
 
 fn read_line() -> String {
     let mut buf = String::new();
-    stdin().read_line(&mut buf);
+    stdin().read_line(&mut buf).unwrap();
     buf
 }
 
