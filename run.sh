@@ -13,6 +13,6 @@ while IFS= read -r line; do
         echo ""
         buf=""
     fi
-done < input.txt
-
+    echo "$line"
+done < "input.txt"
 echo -e "$buf" | cargo run < /dev/stdin
